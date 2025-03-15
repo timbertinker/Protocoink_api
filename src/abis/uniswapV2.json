@@ -1,0 +1,12 @@
+[
+    {
+        "name": "getAmountsOut",
+        "inputs": [
+            {"name": "amountIn", "type": "uint256"},
+            {"name": "path", "type": "address[]"}
+        ],
+        "outputs": [{"name": "amounts", "type": "uint256[]"}],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

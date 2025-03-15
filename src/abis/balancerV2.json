@@ -1,0 +1,25 @@
+[
+    {
+        "name": "queryBatchSwap",
+        "inputs": [
+            {"name": "kind", "type": "uint8"},
+            {"name": "swaps", "type": "tuple[]", "components": [
+                {"name": "poolId", "type": "bytes32"},
+                {"name": "assetInIndex", "type": "uint256"},
+                {"name": "assetOutIndex", "type": "uint256"},
+                {"name": "amount", "type": "uint256"},
+                {"name": "userData", "type": "bytes"}
+            ]},
+            {"name": "assets", "type": "address[]"},
+            {"name": "funds", "type": "tuple", "components": [
+                {"name": "sender", "type": "address"},
+                {"name": "fromInternalBalance", "type": "bool"},
+                {"name": "recipient", "type": "address"},
+                {"name": "toInternalBalance", "type": "bool"}
+            ]}
+        ],
+        "outputs": [{"name": "", "type": "int256[]"}],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
